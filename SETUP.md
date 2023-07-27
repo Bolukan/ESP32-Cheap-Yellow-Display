@@ -23,18 +23,18 @@ You can then select basically any ESP32 board in the boards menu. (I usually use
 
 If you see errors uploading a sketch, try setting board upload speed to `115200`
 
-### PlatformIO IDE
-
-If you prefer the [PlatformIO IDE](https://platformio.org/platformio-ide), you will have to install the [Espressif 32 development platform](https://registry.platformio.org/platforms/platformio/espressif32). The examples are created to use with the Arduino IDE, but I provide an example of the needed platformio.ini and the code in the ino can be copied to main.cpp.  
-he content of platformio.ini will take care of the installation of "TFT_eSPI" and the settings in User_Setup.h, so you can skip the next instructions about Library Configuration.
-
-### Library Configuration
+#### Library Configuration
 
 The CYD can work with a selection of different libraries, but the main one this repo will focus on is [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI) as it is a fairly popular library for working with these types of dsiplays and there are lots of examples. 
 
 This can be installed from the library manager by searching for "TFT_eSPI".
 
  > Note: After install of the library, copy the file [User_Setup.h](https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/DisplayConfig/User_Setup.h) to the `libraries\TFT_eSPI` Arduino folder. This sets up the library for use with this display.
+
+### PlatformIO IDE
+
+If you prefer the [PlatformIO IDE](https://platformio.org/platformio-ide), you will have to install the [Espressif 32 development platform](https://registry.platformio.org/platforms/platformio/espressif32). The examples are created to use with the Arduino IDE, but I provide an example of the needed platformio.ini and the code in the ino can be copied to main.cpp.  
+The content of platformio.ini will take care of the installation of "TFT_eSPI" and the settings in User_Setup.h.
 
 ### Examples
 

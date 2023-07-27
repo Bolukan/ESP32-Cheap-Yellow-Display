@@ -33,7 +33,7 @@ This can be installed from the library manager by searching for "TFT_eSPI".
 
 ### PlatformIO IDE
 
-If you prefer the [PlatformIO IDE](https://platformio.org/platformio-ide), you will have to install the [Espressif 32 development platform](https://registry.platformio.org/platforms/platformio/espressif32). The examples are created to use with the Arduino IDE, but I provide an example of the needed platformio.ini and the code in the ino can be copied to main.cpp.  
+If you prefer the [PlatformIO IDE](https://platformio.org/platformio-ide), you will have to install the [Espressif 32 development platform](https://registry.platformio.org/platforms/platformio/espressif32). The examples are created to use with the Arduino IDE, but I provide an example of the needed [platformio.ini](/examples/PlatformIO/) and the code in the ino can be copied to main.cpp.  
 The content of platformio.ini will take care of the installation of "TFT_eSPI" and the settings in User_Setup.h.
 
 ### Examples

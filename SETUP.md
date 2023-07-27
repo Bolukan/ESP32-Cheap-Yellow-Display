@@ -8,23 +8,25 @@ There really is nothing to setup here, just connect the CYD to a computer using 
 
 ## Software Setup
 
-The driver needs to be setup for uploading to the CYD, including webflashing projects. 
-
-### Driver
-
+The USB to UART driver needs to be setup on your computer for uploading to the CYD, also needed for flashing projects directly from a webpage.  
 The CYD uses the CH340 USB to UART chip. If you do not have a driver already installed for this chip you may need to install one. Check out [Sparkfun's guide for installation instruction](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
 
 ## Coding Setup
 
 Follow these instructions if you want to write new code for the CYD
 
-### Board definition
+### Arduino IDE
 
-You will need to have the ESP32 setup for your Arduino IDE, [instructions can be found here](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html).
+You will need to have to install the Arduino-ESP32 support in your Arduino IDE, [instructions can be found here](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html).
 
 You can then select basically any ESP32 board in the boards menu. (I usually use "ESP32 Dev Module", but it doesn't really matter)
 
 If you see errors uploading a sketch, try setting board upload speed to `115200`
+
+### PlatformIO IDE
+
+If you prefer the [PlatformIO IDE](https://platformio.org/platformio-ide), you will have to install the [Espressif 32 development platform](https://registry.platformio.org/platforms/platformio/espressif32). The examples are created to use with the Arduino IDE, but I provide an example of the needed platformio.ini and the code in the ino can be copied to main.cpp.  
+he content of platformio.ini will take care of the installation of "TFT_eSPI" and the settings in User_Setup.h, so you can skip the next instructions about Library Configuration.
 
 ### Library Configuration
 
